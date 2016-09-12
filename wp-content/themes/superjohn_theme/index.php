@@ -1,11 +1,5 @@
 <?php get_header(); ?>
 
-	<body>
-		<div class="page-wrapper">
-			<?php include_once('includes/nav.php'); ?>
-			</header><!--End Main Header -->
-
-
 			<!--Main Slider-->
 			<section class="main-slider">
 
