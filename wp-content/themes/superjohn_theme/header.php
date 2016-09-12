@@ -5,10 +5,8 @@
       <title><?php wp_title(''); ?> </title>
       <meta name="description" content="Prostate Cancer Treatment Tarzana - Prostate Cancer Treatment, Enlarged Prostate Treatment and Overactive Bladder Treatment are performed by Dr. Eugene Dula M.D., serving Tarzana, West Hills and the surrounding area.">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <?php include_once('includes/head.php'); ?>
-
       <?php wp_head(); ?>
    </head>
    <body <?php body_class(); ?> >
@@ -44,7 +42,7 @@
                <div class="outer-box">
                   <!-- Logo -->
                   <div class="logo">
-                     <a href="/"><img src="images/logo.png" alt=""></a>
+                     <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt=""></a>
                   </div>
                   <!-- Main Menu -->
                   <nav class="main-menu">
@@ -57,31 +55,19 @@
                         </button>
                      </div>
                      <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation">
-                           <li class="<?php if($_SERVER['REQUEST_URI'] == '/index.php' || $_SERVER['REQUEST_URI'] == '/') { echo "current"; }?>"><a href="/">Home</a></li>
-                           <li class="dropdown <?php if(strstr($_SERVER['REQUEST_URI'], 'doctor')) { echo 'current';} ?>">
-                              <a href="/doctors.php">Doctors & Staff</a>
-                              <ul>
-                                 <li><a href="/doctor.php">Eugene Dula, M.D., F.A.C.S.</a></li>
-                                 <li><a href="/doctor.php">Richard Leff, M.D., F.A.C.S.</a></li>
-                              </ul>
-                           </li>
-                           <li class="dropdown <?php if(strstr($_SERVER['REQUEST_URI'], 'patient')) { echo 'current';} ?>">
-                              <a href="#">Patient Resources</a>
-                              <ul>
-                                 <li><a href="/patient-education.php">Patient Education</a></li>
-                                 <li><a href="/patient-information.php">Patient Information</a></li>
-                              </ul>
-                           </li>
-                           <li class="dropdown <?php if(strstr($_SERVER['REQUEST_URI'], 'procedure')) { echo 'current';} ?>">
-                              <a href="/procedures.php">Procedures</a>
-                              <ul>
-                                 <li><a href="/procedure.php">Procedure Title</a></li>
-                                 <li><a href="/procedure.php">Procedure Title</a></li>
-                              </ul>
-                           </li>
-                           <li class="<?php if(strstr($_SERVER['REQUEST_URI'], 'contact')) { echo 'current';} ?>"><a href="/contact.php">Contact Us</a></li>
-                        </ul>
+                        <?php
+                           wp_nav_menu( array(
+                               'menu'              => 'primary',
+                               'theme_location'    => 'primary',
+                               'depth'             => 2,
+                               'container'         => 'div',
+                               'container_class'   => 'collapse navbar-collapse',
+                           'container_id'      => 'bs-example-navbar-collapse-1',
+                               'menu_class'        => 'nav navbar-nav',
+                               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                               'walker'            => new wp_bootstrap_navwalker())
+                           );
+                           ?>
                      </div>
                   </nav>
                   <!-- Main Menu End-->

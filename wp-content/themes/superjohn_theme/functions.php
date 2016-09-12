@@ -10,6 +10,13 @@
 
         add_theme_support('automatic-feed-links');
         add_theme_support('title-tag');
+
+        /// Register Custom Navigation Walker
+        require_once('wp_bootstrap_navwalker.php') ;
+
+        register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'superjohn_theme' ),
+) );
     }
 
     add_action('after_setup_theme', 'SfvUrologyAssociates_setup');

@@ -7,7 +7,7 @@
 					<div class="tp-banner">
 						<ul>
 							<li data-transition="slide" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/2.jpg"  data-saveperformance="off"  data-title="SFVUA">
-								<img src="images/main-slider/2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-slider/2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 								<div class="tp-caption lfl tp-resizeme"
 									 data-x="right" data-hoffset="0"
@@ -85,7 +85,7 @@
 						<div class="col-md-4 col-sm-6 col-xs-12 column wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
 							<article class="inner-box">
 								<figure class="image">
-									<a href="#"><img src="images/home-1.jpg" alt=""></a>
+									<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-1.jpg" alt=""></a>
 									<div class="overlay"><span class="left-curve"></span><span class="right-curve"></span><a href="#" class="overlay-link"></a></div>
 								</figure>
 								<div class="content">
@@ -102,7 +102,7 @@
 						<div class="col-md-4 col-sm-6 col-xs-12 column wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1500ms">
 							<article class="inner-box">
 								<figure class="image">
-									<a href="#"><img src="images/home-3.jpg" alt=""></a>
+									<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-3.jpg" alt=""></a>
 									<div class="overlay"><span class="left-curve"></span><span class="right-curve"></span><a href="#" class="overlay-link"></a></div>
 								</figure>
 								<div class="content">
@@ -119,7 +119,7 @@
 						<div class="col-md-4 col-sm-6 col-xs-12 column wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
 							<article class="inner-box">
 								<figure class="image">
-									<a href="#"><img src="images/home-2.jpg" alt=""></a>
+									<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-2.jpg" alt=""></a>
 									<div class="overlay"><span class="left-curve"></span><span class="right-curve"></span><a href="#" class="overlay-link"></a></div>
 								</figure>
 								<div class="content">
@@ -207,7 +207,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-1.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-1.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
@@ -222,7 +222,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-5.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
@@ -237,7 +237,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-6.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="images/resource/<?php echo esc_url( get_template_directory_uri() ); ?>/featured-image-6.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
@@ -252,7 +252,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-4.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-4.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
@@ -267,7 +267,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-7.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-7.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
@@ -282,7 +282,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<div class="department">
 									<div class="thumb">
-										<img class="img-responsive img-fullwidth" src="images/resource/featured-image-10.jpg" alt="">
+										<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt="">
 									</div>
 									<div class="department-details">
 										<div class="round-style"></div>
