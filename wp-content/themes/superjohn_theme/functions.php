@@ -6,6 +6,7 @@
 
     }
 
+
     function SfvUrologyAssociates_setup() {
 
         add_theme_support('automatic-feed-links');
@@ -29,6 +30,7 @@
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css') ;
         wp_enqueue_style( 'responsive', get_template_directory_uri() . '/responsive.css') ;
         wp_enqueue_style( 'bootstrap-margin-padding', get_template_directory_uri() . '/bootstrap-margin-padding.css') ;
+        wp_enqueue_style( 'medical-font-icons', get_template_directory_uri() . '/css/medical-font-icons.css') ;
 
         /* add scripts */
         wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), true );

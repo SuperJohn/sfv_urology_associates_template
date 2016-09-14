@@ -262,6 +262,18 @@ require_once AI1WM_IMPORT_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-import-clean.php';
 
+require_once AI1WM_HTTP_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-http-stream.php';
+
+require_once AI1WM_HTTP_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-http-curl.php';
+
+require_once AI1WM_HTTP_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-http-factory.php';
+
 require_once AI1WM_MODEL_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-deprecated.php';
@@ -314,6 +326,3 @@ require_once AI1WM_MODEL_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-http.php';
 
-require_once AI1WM_MODEL_PATH .
-			DIRECTORY_SEPARATOR .
-			'class-ai1wm-streams.php';

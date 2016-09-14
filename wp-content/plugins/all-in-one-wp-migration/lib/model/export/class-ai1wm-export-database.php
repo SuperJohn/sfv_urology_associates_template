@@ -104,6 +104,9 @@ class Ai1wm_Export_Database {
 			   ->set_table_prefix_columns( ai1wm_table_prefix() . 'options', array( 'option_name' ) )
 			   ->set_table_prefix_columns( ai1wm_table_prefix() . 'usermeta', array( 'meta_key' ) );
 
+		// Status options
+		$client->set_table_query_clauses( ai1wm_table_prefix() . 'options', sprintf( " WHERE option_name != '%s' ", AI1WM_STATUS ) );
+
 		// Set current table index
 		if ( isset( $params['current_table_index'] ) ) {
 			$current_table_index = (int) $params['current_table_index'];
@@ -111,18 +114,8 @@ class Ai1wm_Export_Database {
 			$current_table_index = 0;
 		}
 
-		// Set current table offset
-		if ( isset( $params['current_table_offset'] ) ) {
-			$current_table_offset = (int) $params['current_table_offset'];
-		} else {
-			$current_table_offset = 0;
-		}
-
-		// Flush status
-		Ai1wm_Status::flush();
-
 		// Export database
-		$completed = $client->export( ai1wm_database_path( $params ), $current_table_index, $current_table_offset, 10 );
+		$completed = $client->export( ai1wm_database_path( $params ), $current_table_index, 10 );
 
 		// Export completed
 		if ( $completed ) {
@@ -139,9 +132,6 @@ class Ai1wm_Export_Database {
 
 		// Set current table index
 		$params['current_table_index'] = $current_table_index;
-
-		// Set current table offset
-		$params['current_table_offset'] = $current_table_offset;
 
 		// Set completed flag
 		$params['completed'] = $completed;

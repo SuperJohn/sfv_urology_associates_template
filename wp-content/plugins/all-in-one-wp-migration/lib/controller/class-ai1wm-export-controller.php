@@ -87,7 +87,7 @@ class Ai1wm_Export_Controller {
 
 					// Do request
 					if ( $completed === false || ( $next = next( $filters ) ) && ( $params['priority'] = key( $filters ) ) ) {
-						return Ai1wm_Http::post( admin_url( 'admin-ajax.php?action=ai1wm_export' ), $params );
+						return Ai1wm_Http::get( admin_url( 'admin-ajax.php?action=ai1wm_export' ), $params );
 					}
 				}
 
