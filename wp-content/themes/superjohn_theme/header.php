@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
    <head>
       <meta charset="<?php bloginfo('charset'); ?>">
-      <title><?php wp_title(''); ?> Test </title>
+      <title><?php wp_title(''); ?></title>
       <meta name="description" content="Prostate Cancer Treatment Tarzana - Prostate Cancer Treatment, Enlarged Prostate Treatment and Overactive Bladder Treatment are performed by Dr. Eugene Dula M.D., serving Tarzana, West Hills and the surrounding area.">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
