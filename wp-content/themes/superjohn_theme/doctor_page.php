@@ -103,6 +103,5 @@
 			</div>
 		</section>
 
-		<?php include_once('includes/footer.php'); ?>
 	</body>
 <?php get_footer(); ?>

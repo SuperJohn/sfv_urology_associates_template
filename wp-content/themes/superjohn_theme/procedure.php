@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Vasectomy | SFVUA</title>
-		<meta name="description" content="">
-		<?php include_once('includes/head.php'); ?>
-	</head>
+<?php /* Template Name: Procedure_Page */ ?>
+
+<?php get_header(); ?>
 
 	<body>
-		<div class="page-wrapper">
-
-			<?php include_once('includes/nav.php'); ?>
-
-			</header><!--End Main Header -->
-
 
 		<!--Page Title-->
-		<section class="page-title" style="background-image:url(images/page-title-1.jpg);">
+		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/page-title-1.jpg);">
 			<div class="auto-container">
 				<h1>Vasectomy</h1>
 
@@ -57,7 +46,7 @@
 					<div class="col-md-9 col-sm-8 col-xs-12 content-side">
 
 						<section class="service-details">
-							<figure class="full-image"><a href="#"><img src="images/v.jpg" alt=""></a></figure>
+							<figure class="full-image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/v.jpg" alt=""></a></figure>
 							<div class="content-outer">
 								<!-- InstanceBeginEditable name="header" -->
 								<h2>Vasectomy</h2>
@@ -170,7 +159,7 @@
 												<p>“Pellentesque a massa risus. Cras convallis finibus porta. Integer in ligula leo. Cras quis consequat nisl, at malesuada sapien. Mauris ultricies nisi eget velit bibendum, sit amet euismod mi gravida.”</p>
 											</div>
 											<div class="slide-info">
-												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="images/resource/author-thumb-2.jpg" alt=""></a></figure>
+												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/author-thumb-2.jpg" alt=""></a></figure>
 												<div class="author-info">
 													<h5>William Perez</h5>
 													<p>Los Angeles</p>
@@ -183,7 +172,7 @@
 												<p>“Pellentesque a massa risus. Cras convallis finibus porta. Integer in ligula leo. Cras quis consequat nisl, at malesuada sapien. Mauris, sit amet euismod mi gravida.”</p>
 											</div>
 											<div class="slide-info">
-												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="images/resource/author-thumb-3.jpg" alt=""></a></figure>
+												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/author-thumb-3.jpg" alt=""></a></figure>
 												<div class="author-info">
 													<h5>Sara Millin</h5>
 													<p>Los Angeles</p>
@@ -196,7 +185,7 @@
 												<p>“Pellentesque a massa risus. Cras convallis finibus porta. Integer in ligula leo. Cras quis consequat nisl, at malesuada sapien. Mauris ultricies nisi eget velit bibendum, sit gravida.”</p>
 											</div>
 											<div class="slide-info">
-												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="images/resource/author-thumb-2.jpg" alt=""></a></figure>
+												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/author-thumb-2.jpg" alt=""></a></figure>
 												<div class="author-info">
 													<h5>William Perez</h5>
 													<p>Los Angeles</p>
@@ -209,7 +198,7 @@
 												<p>“Pellentesque a massa risus. Cras convallis finibus porta. Integer in ligula leo. velit bibendum, sit amet euismod mi gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”</p>
 											</div>
 											<div class="slide-info">
-												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="images/resource/author-thumb-3.jpg" alt=""></a></figure>
+												<figure class="author-thumb img-circle"><a href="#"><img class="img-circle" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/author-thumb-3.jpg" alt=""></a></figure>
 												<div class="author-info">
 													<h5>Sara Millin</h5>
 													<p>Los Angeles</p>
@@ -237,7 +226,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 column">
 						<div class="department">
 							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="images/resource/featured-image-1.jpg" alt="">
+								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-1.jpg" alt="">
 							</div>
 							<div class="department-details">
 								<div class="round-style"></div>
@@ -254,7 +243,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 column">
 						<div class="department">
 							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="images/resource/featured-image-5.jpg" alt="">
+								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt="">
 							</div>
 							<div class="department-details">
 								<div class="round-style"></div>
@@ -271,7 +260,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 column">
 						<div class="department">
 							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="images/resource/featured-image-6.jpg" alt="">
+								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-6.jpg" alt="">
 							</div>
 							<div class="department-details">
 								<div class="round-style"></div>
@@ -289,7 +278,7 @@
 
 						<div class="department">
 							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="images/resource/featured-image-10.jpg" alt="">
+								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt="">
 							</div>
 							<div class="department-details">
 								<div class="round-style"></div>
@@ -310,4 +299,5 @@
 
 		<?php include_once('includes/footer.php'); ?>
 	</body>
-</html>
+
+<?php get_footer(); ?>

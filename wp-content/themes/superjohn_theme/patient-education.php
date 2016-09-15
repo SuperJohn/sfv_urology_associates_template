@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Patient Education | SFVUA</title>
-		<meta name="description" content="">
-		<?php include_once('includes/head.php'); ?>
-	</head>
+<?php /* Template Name: Patient_Education */ ?>
+
+<?php get_header(); ?>
 
 	<body>
 		<div class="page-wrapper">
 
-			<?php include_once('includes/nav.php'); ?>
-
-			</header><!--End Main Header -->
-
-
 		<!--Page Title-->
-		<section class="page-title" style="background-image:url(images/background/education.jpg);">
+		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/background/education.jpg);">
 			<div class="auto-container">
 				<h1>Patient Education</h1>
 
@@ -49,7 +39,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-10.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt=""></a></figure>
 							<h2>Biofeedback Information</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -59,7 +49,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-1.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-1.jpg" alt=""></a></figure>
 							<h2>Bladder Retraining Instructions</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -69,7 +59,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="600ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-7.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-7.jpg" alt=""></a></figure>
 							<h2>Kidney Stones in Adults</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -80,7 +70,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="600ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-9.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-9.jpg" alt=""></a></figure>
 							<h2>Pelvic Floor Exercises</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -90,7 +80,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="900ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-11.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-11.jpg" alt=""></a></figure>
 							<h2>Urge Urinary Incontinence</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -98,7 +88,7 @@
 					</div>
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="900ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-11.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-11.jpg" alt=""></a></figure>
 							<h2>Urodynamics Info for Patients</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -107,7 +97,7 @@
 					<!--Column-->
 					<div class="col-md-4  col-sm-6 col-xs-12 column wow fadeIn" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<article class="inner-box">
-							<figure class="image"><a href="#"><img src="images/resource/featured-image-5.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt=""></a></figure>
 							<h2>Painful Bladder Syndrome and Interstitial Cystitis</h2>
 							<div class="text"><p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus.</p></div>
 							<div class="more-link"><a href="#" class="read-more" target="_blank"><span class="fa fa-cloud-download"></span> More Info </a></div>
@@ -122,4 +112,5 @@
 
 		<?php include_once('includes/footer.php'); ?>
 	</body>
-</html>
+
+<?php get_footer(); ?>

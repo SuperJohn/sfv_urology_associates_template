@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Contact Us | SFVUA</title>
-		<meta name="description" content="">
-		<?php include_once('includes/head.php'); ?>
-	</head>
+<?php /* Template Name: Contact */ ?>
+
+<?php get_header(); ?>
 
 	<body>
-		<div class="page-wrapper">
-
-			<?php include_once('includes/nav.php'); ?>
-
-			</header><!--End Main Header -->
-
-
 		<!--Page Title-->
-		<section class="page-title" style="background-image:url(images/sfv.jpg);">
+		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/sfv.jpg);">
 			<div class="auto-container">
 				<h1>Contact Us</h1>
 
@@ -131,4 +119,4 @@
 
 		<?php include_once('includes/footer.php'); ?>
 	</body>
-</html>
+<?php get_footer(); ?>

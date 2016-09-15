@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Patient Information | SFVUA</title>
-		<meta name="description" content="">
-		<?php include_once('includes/head.php'); ?>
-	</head>
+<?php /* Template Name: Patient_Information */ ?>
 
+<?php get_header(); ?>
 	<body>
-		<div class="page-wrapper">
-
-			<?php include_once('includes/nav.php'); ?>
-
-			</header><!--End Main Header -->
-
 
 		<!--Page Title-->
-		<section class="page-title" style="background-image:url(images/background/information.jpg);">
+		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/background/information.jpg);">
 			<div class="auto-container">
 				<h1>Patient Information</h1>
 
@@ -56,7 +44,7 @@
 					<div class="col-md-9 col-sm-8 col-xs-12 pull-right content-side">
 
 						<section class="service-details">
-							<figure class="full-image"><a href="#"><img src="images/dr-bg.jpg" alt=""></a></figure>
+							<figure class="full-image"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/dr-bg.jpg" alt=""></a></figure>
 							<div class="content-outer">
 								<h2>Accepted Insurances</h2>
 								<p>We accept most insurance plans. Please call the office for verification or contact your insurance company directly for benefits. Insurance co-payments/deductibles are due at the time of service. Please refer to our Office Financial Policy for complete description.</p>
@@ -153,4 +141,5 @@
 
 		<?php include_once('includes/footer.php'); ?>
 	</body>
-</html>
+
+<?php get_footer(); ?>

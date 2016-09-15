@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Procedures | SFVUA</title>
-		<meta name="description" content="">
-		<?php include_once('includes/head.php'); ?>
-	</head>
+<?php /* Template Name: Our_Procedures */ ?>
 
-	<body>
-		<div class="page-wrapper">
-
-			<?php include_once('includes/nav.php'); ?>
-
-			</header><!--End Main Header -->
-
-
+<?php get_header(); ?>
 		<!--Page Title-->
-		<section class="page-title" style="background-image:url(images/page-title-1.jpg);">
+		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/page-title-1.jpg);">
 			<div class="auto-container">
 				<h1>Procedures</h1>
 
@@ -47,7 +33,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-1.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-1.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -62,7 +48,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-5.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -77,7 +63,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-6.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-6.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -92,7 +78,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-4.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-4.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -107,7 +93,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-7.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-7.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -122,7 +108,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="images/resource/featured-image-10.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
@@ -143,4 +129,4 @@
 
 		<?php include_once('includes/footer.php'); ?>
 	</body>
-</html>
+<?php get_footer(); ?>
