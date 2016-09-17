@@ -35,39 +35,8 @@
 							<h2>We’d love to hear from you</h2>
 							<div class="line"></div>
 						</div>
-						<div class="form-box">
-							<form id="contact-form" method="post" action="sendemail.php">
-								<div class="row clearfix">
-									<div class="form-group col-md-6 col-sm-12 col-xs-12">
-										<div class="field-label">Your Name *</div>
-										<input type="text" name="username" placeholder="">
-									</div>
-									<div class="form-group col-md-6 col-sm-12 col-xs-12">
-										<div class="field-label">Your Email *</div>
-										<input type="email" name="email" placeholder="">
-									</div>
-									<div class="form-group col-md-6 col-sm-12 col-xs-12">
-										<div class="field-label">Location *</div>
-										<select>
-											<option value="Tarzana">Tarzana</option>
-											<option value="West Hills">West Hills</option>
-										</select>
-									</div>
-									<div class="form-group col-md-6 col-sm-12 col-xs-12">
-										<div class="field-label">Subject *</div>
-										<input type="text" name="subject" placeholder="">
-									</div>
-									<div class="form-group col-md-12 col-sm-12 col-xs-12">
-										<div class="field-label">Message *</div>
-										<textarea name="message" placeholder=""></textarea>
-									</div>
 
-									<div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
-										<button class="normal-btn theme-btn" type="submit" name="submit-form">SEND MESSAGE</button>
-									</div>
-								</div>
-							</form>
-						</div>
+						<?php echo do_shortcode('[contact-form-7 id="65" title="SFVUA Contact Form"]');?>
 
 					</div>
 
