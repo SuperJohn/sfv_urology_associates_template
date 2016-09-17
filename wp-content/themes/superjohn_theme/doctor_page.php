@@ -5,7 +5,7 @@
 <!--Page Title-->
 		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/background/doctor.jpg);">
 			<div class="auto-container">
-				<h1>Dr. Richard Shapiro</h1>
+				<h1><?php the_title(); ?></h1>
 
 				<ul class="bread-crumb">
 					<li><a href="/">Home</a></li>
@@ -58,12 +58,10 @@
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8 pl-60 pl-sm-15">
 							<div>
-								<h3>Meet Dr. Richard Shapiro</h3>
-								<h5 class="text-thm">M.D., F.A.C.S.</h5>
-								<p>Dr. Richard Shapiro was born in Chicago, Illinois. He is a graduate of the University of Illinois in Champaign-Urbana, were he received his Bachelor of Science degree in Biology with highest honors. He earned his medical degree from Rush University in Chicago, where he was elected to Alpha Omega Alpha, the National Medical Honor Society. After an internal medicine internship at Rush Presbyterian-St. Lukes in Chicago, he completed his internship and residency in general surgery at UCLA. His urology residency was at UCLA with further training at USC, where he specialized in urologic cancer surgery, urinary reconstruction and pediatric urology. </p>
-								<p>Dr. Shapiro is a Clinical Associate Professor of Urology at USC. He was the attending surgeon in pediatric urology at USC for nine years, teaching surgical techniques to the residents. He has since brought university-type surgery to the San Fernando Valley, being the first urologist to perform many procedures in the valley. These include continent urinary diversion, augmentation cystoplasty using intestinal segments, artificial urinary sphincter, laparoscopic radical prostatectomy and nephrectomy as well as thoracoabdominal retroperitoneal lymph node dissection for testicular cancer. </p>
-								<p>He has extensive experience with laser and microwave thermo therapy for enlarged prostate, endoscopic treatment of urinary stones and pelvic reconstruction for pelvic prolapse. He also maintains an active pediatric urology practice using state of the art techniques for hypospadias  repair and urinary reconstruction.</p>
-								<p>Dr. Shapiro is Board Certified by the American Board of Urology and has been recertified twice. He is a member of the American Urologic Association, the California and Los Angeles Urological Societies and is a Fellow at the American College  of Surgeons. He has served on the Executive Committee at Tarzana Hospital and is a former Chief of Surgery. </p>
+								<h3><?php the_field('doctor_intro'); ?></h3>
+								<h5 class="text-thm"> <?php the_field('doctor_title'); ?> </h5>
+								<p> <?php the_field('text'); ?> </p>
+
 							</div>
 							<div class="row">
 								<div class="col-md-12">

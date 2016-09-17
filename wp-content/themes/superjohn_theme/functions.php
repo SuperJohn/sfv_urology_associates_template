@@ -17,6 +17,7 @@
 
         register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'superjohn_theme' ),
+    'footer' => __( 'Footer Menu', 'superjohn_theme' ),
 ) );
     }
 

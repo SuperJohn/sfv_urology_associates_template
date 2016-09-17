@@ -7,7 +7,7 @@
 		<!--Page Title-->
 		<section class="page-title" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/page-title-1.jpg);">
 			<div class="auto-container">
-				<h1>Vasectomy</h1>
+				<h1><?php the_title();?></h1>
 
 				<ul class="bread-crumb">
 					<li><a href="/">Home</a></li>
