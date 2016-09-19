@@ -11,6 +11,7 @@
 
         add_theme_support('automatic-feed-links');
         add_theme_support('title-tag');
+        add_theme_support( 'post-thumbnails' );
 
         /// Register Custom Navigation Walker
         require_once('wp_bootstrap_navwalker.php') ;

@@ -10,7 +10,7 @@
 				<ul class="bread-crumb">
 					<li><a href="/">Home</a></li>
 					<li><a href="/doctors.php">Doctors</a></li>
-					<li><a href="#">Dr. Richard Shapiro</a></li>
+					<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
 				</ul>
 
 			</div>
@@ -29,8 +29,9 @@
 					<div class="row">
 						<div class="col-sx-12 col-sm-4 col-md-4 mb-30">
 							<div class="doctor-thumb">
-								<img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/shapiro.jpg" alt="">
+								<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" alt="">
 							</div>
+
 							<ul class="social-icons icon-thm mt-15 mb-15 text-center">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -58,14 +59,17 @@
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8 pl-60 pl-sm-15">
 							<div>
-								<h3><?php the_field('doctor_intro'); ?></h3>
-								<h5 class="text-thm"> <?php the_field('doctor_title'); ?> </h5>
-								<p> <?php the_field('text'); ?> </p>
+
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+                                the_content();
+                                endwhile; else: ?>
+                                <p>Sorry, no posts matched your criteria.</p>
+                                <?php endif; ?>
 
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<h5 class="text-thm bottom-border mb-30 mt-100">Contact Dr. Shapiro</h5>
+									<h5 class="text-thm bottom-border mb-30 mt-100">Contact <?php the_title();?></h5>
 									<div class="form">
 										<form method="post" action="index.html">
 											<div class="row clearfix">
