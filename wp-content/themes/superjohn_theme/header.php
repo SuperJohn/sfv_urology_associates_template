@@ -21,15 +21,15 @@
                <!-- Top Left -->
                <div class="top-left">
                   <ul class="clearfix">
-                     <li><a href="<?php echo esc_url( home_url() ) ;?>"><span class="fa fa-user"></span><php echo get_bloginfo('name'); ?> </a></li>
+                     <li><a href="<?php echo esc_url( home_url() ) ;?>"><span class="fa fa-user"></span><?php echo get_bloginfo('name'); ?> </a></li>
                   </ul>
                </div>
                <!-- Top Right -->
                <div class="top-right">
                   <ul class="clearfix">
-                     <li><a href="tel:818-996-4242"><span class="fa fa-phone"></span> Tarzana: 818.996.4242<?php the_field('tarzana-phone'); ?></a></li>
-                     <li><a href="tel:818-346-8736 "><span class="fa fa-phone"></span> West Hills: 818.346.8736</a></li>
-                     <li><a href="#"><span class="fa fa-clock-o"></span> 9am - 5pm</a></li>
+                     <li><a href="tel:818-996-4242"><span class="fa fa-phone"></span> Tarzana: <?php the_field('tarzana_phone');?></a></li>
+                     <li><a href="tel:818-346-8736 "><span class="fa fa-phone"></span> West Hills: <?php the_field('west_hills_phone');?></a></li>
+                     <li><a href="#"><span class="fa fa-clock-o"></span> <?php the_field('office_hours');?></a></li>
                   </ul>
                </div>
             </div>

@@ -29,7 +29,7 @@
 					<div class="row">
 						<div class="col-sx-12 col-sm-4 col-md-4 mb-30">
 							<div class="doctor-thumb">
-								<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" alt="">
+								<img class="img-responsive" src="<?php the_post_thumbnail_url();?>" alt="">
 							</div>
 
 							<ul class="social-icons icon-thm mt-15 mb-15 text-center">
@@ -57,6 +57,9 @@
 								</div>
 							</div>
 						</div>
+
+
+
 						<div class="col-xs-12 col-sm-8 col-md-8 pl-60 pl-sm-15">
 							<div>
 

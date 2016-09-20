@@ -146,9 +146,8 @@
 						<h2>ABOUT Urology Associates</h2>
 						<div class="line"></div>
 						<br>
-						<p>Center dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata.Lorem ipsum dolor sit amet, consetetur sadipscing .</p>
-						<p>Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus. Quisque ac orci ante. Proin sit amet turpis lobortis, imperdiet nisi ut, viverra lorem. Nullam ex massa, euismod vel metus non.</p>
-					</div>
+						<?php the_field('about_sfvua');?>
+						</div>
 				</div>
 			</section>
 
@@ -169,23 +168,11 @@
 									<div class="line"></div>
 								</div>
 
-								<div class="block">
-									<div class="number wow rollIn" data-wow-delay="0ms" data-wow-duration="1500ms">1</div>
-									<h4>Over 20 years of experience</h4>
-									<p>Nunc fringilla eros vitae nisl posuere, ut consectetur nulla feugiat. Nullam ut mauris vitae tortor sodales efficitur.</p>
-								</div>
-
-								<div class="block">
-									<div class="number wow rollIn" data-wow-delay="300ms" data-wow-duration="1500ms">2</div>
-									<h4>Experienced Doctor's.</h4>
-									<p>Quisque ac orci ante. Proin sit amet turpis lobortis, imperdiet nisi ut, viverra lorem. Nullam ex massa, euismod vel metus non.</p>
-								</div>
-
-								<div class="block">
-									<div class="number wow rollIn" data-wow-delay="600ms" data-wow-duration="1500ms">3</div>
-									<h4>Online Appointments</h4>
-									<p>Nunc fringilla eros vitae nisl posuere, ut consectetur nulla feugiat. Nullam ut mauris vitae tortor sodales efficitur.</p>
-								</div>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+                                the_content();
+                                endwhile; else: ?>
+                                <p>Sorry, no posts matched your criteria.</p>
+                                <?php endif; ?>
 
 							</article>
 						</div>

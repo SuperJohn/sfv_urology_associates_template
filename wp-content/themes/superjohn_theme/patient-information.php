@@ -81,15 +81,11 @@
 							</div>
 							<br>
 							<!--Links Widget-->
-							<div class="widget links-widget">
-								<h3>PATIENT FORMS</h3>
-								<ul>
-									<li><a href="#">Health Questionnaire - Male</a></li>
-									<li><a href="#">Health Questionnaire - Female</a></li>
-									<li><a href="#">International Prostate Symptom Score (IPSS)</a></li>
-									<li><a href="#">Notice of Privacy Practices</a></li>
-								</ul>
-							</div>
+							<?php if ( is_active_sidebar( 'patient_information_sidebar' ) ) : ?>
+                            <div class="widget links-widget">
+                                <?php dynamic_sidebar( 'patient_information_sidebar' ); ?>
+                            </div><!-- #primary-sidebar -->
+                        <?php endif; ?>
 
 						</aside>
 
