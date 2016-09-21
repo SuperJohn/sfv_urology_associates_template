@@ -85,7 +85,4 @@
 			<div class="map-container" id="map-location"></div>
 		</section>
 
-
-		<?php include_once('includes/footer.php'); ?>
-	</body>
 <?php get_footer(); ?>
