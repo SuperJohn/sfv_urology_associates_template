@@ -30,96 +30,36 @@
 				</div>
 				<div class="sec-content">
 					<div class="row">
+
+						<?php $child_pages = new WP_Query( array(
+                                    'post_type'      => 'page', // set the post type to page
+                                    'posts_per_page' => 3, // number of posts (pages) to show
+                                    'post_parent'    => 38, // enter the post ID of the parent page
+                                    'no_found_rows'  => true, // no pagination necessary so improve efficiency of loop
+                                ) );
+                        ?>
+
+                        <?php if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>
+
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="department">
 								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-1.jpg" alt="">
+									<img class="img-responsive img-fullwidth" src="<?php the_post_thumbnail_url();?>" alt="">
 								</div>
 								<div class="department-details">
 									<div class="round-style"></div>
 									<i class="icon icon-hospital35"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
+									<h4 class="title"><?php the_title() ?></h4>
+									<p class="details pt-5"><?php the_excerpt('short_excerpt');?></p>
+									<a href="<?php the_permalink() ?>" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
+									<a class="thm-btn inverse btn-xs" href="/contact.php"><i class="fa fa-comment-o"></i> Contact</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="department">
-								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt="">
-								</div>
-								<div class="department-details">
-									<div class="round-style"></div>
-									<i class="icon icon-heart36"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="department">
-								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-6.jpg" alt="">
-								</div>
-								<div class="department-details">
-									<div class="round-style"></div>
-									<i class="icon icon-brain9"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="department">
-								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-4.jpg" alt="">
-								</div>
-								<div class="department-details">
-									<div class="round-style"></div>
-									<i class="icon icon-medicine14"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="department">
-								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-7.jpg" alt="">
-								</div>
-								<div class="department-details">
-									<div class="round-style"></div>
-									<i class="icon icon-xray2"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="department">
-								<div class="thumb">
-									<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt="">
-								</div>
-								<div class="department-details">
-									<div class="round-style"></div>
-									<i class="icon icon-ambulance9"></i>
-									<h4 class="title">Procedure</h4>
-									<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-									<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-									<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-comment-o"></i> Contact</a>
-								</div>
-							</div>
-						</div>
+
+                             <?php endwhile; wp_reset_postdata(); else : ?>
+                             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                             <?php endif; ?>
 					</div>
 				</div>
 			</div>

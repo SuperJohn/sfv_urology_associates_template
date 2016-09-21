@@ -184,9 +184,9 @@
 							</div>
 							<div class="department-details">
 								<div class="round-style"></div>
-								<i class="icon icon-hospital35"></i>
+								<i class="icon <?php the_field('icon');?>"></i>
 								<h4 class="title"><?php the_title();?></h4>
-								<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
+								<p class="details pt-5"><?php the_excerpt('short_excerpt');?></p>
 								<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
 								<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-heart"></i> Support</a>
 							</div>
@@ -197,57 +197,6 @@
                         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>
 
-					<!--Column-->
-					<div class="col-md-3 col-sm-6 col-xs-12 column">
-						<div class="department">
-							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-5.jpg" alt="">
-							</div>
-							<div class="department-details">
-								<div class="round-style"></div>
-								<i class="icon icon-heart36"></i>
-								<h4 class="title">Procedure Title</h4>
-								<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-								<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-								<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-heart"></i> Support</a>
-							</div>
-						</div>
-					</div>
-
-					<!--Column-->
-					<div class="col-md-3 col-sm-6 col-xs-12 column">
-						<div class="department">
-							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-6.jpg" alt="">
-							</div>
-							<div class="department-details">
-								<div class="round-style"></div>
-								<i class="icon icon-brain9"></i>
-								<h4 class="title">Procedure Title</h4>
-								<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-								<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-								<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-heart"></i> Support</a>
-							</div>
-						</div>
-					</div>
-
-					<!--Column-->
-					<div class="col-md-3 col-sm-6 col-xs-12 column">
-
-						<div class="department">
-							<div class="thumb">
-								<img class="img-responsive img-fullwidth" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/resource/featured-image-10.jpg" alt="">
-							</div>
-							<div class="department-details">
-								<div class="round-style"></div>
-								<i class="icon icon-ambulance9"></i>
-								<h4 class="title">Procedure Title</h4>
-								<p class="details pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit....</p>
-								<a href="#donation-form" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
-								<a class="thm-btn inverse btn-xs" href="#"><i class="fa fa-heart"></i> Support</a>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 

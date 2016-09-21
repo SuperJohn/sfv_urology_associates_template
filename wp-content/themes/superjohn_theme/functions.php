@@ -6,6 +6,15 @@
 
     }
 
+    function short_excerpt( $length ) {
+        return 30;
+    }
+    add_filter( 'excerpt_length', 'short_excerpt', 999 );
+
+
+
+
+
 
     function SfvUrologyAssociates_setup() {
 
@@ -19,6 +28,7 @@
         register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'superjohn_theme' ),
         'footer' => __( 'Footer Menu', 'superjohn_theme' ),
+        'footer2' => __( 'Footer Menu 2', 'superjohn_theme' ),
                             ) );
     }
 

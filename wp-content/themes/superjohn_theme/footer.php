@@ -34,11 +34,11 @@
                            wp_nav_menu( array(
                                'menu'              => 'footer',
                                'theme_location'    => 'footer',
-                               'depth'             => 2,
+                               'depth'             => 1,
                                'container'         => 'div',
-                               'container_class'   => 'collapsse navbar-collapse',
+                               'container_class'   => 'footer-widget links',
                            'container_id'      => 'bs-example-navbar-collapse-1',
-                               'menu_class'        => 'nav navbar-nav',
+                               'menu_class'        => 'footer-widget links',
                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                'walker'            => new wp_bootstrap_navwalker())
                            );
@@ -57,6 +57,21 @@
 									<div class="col-md-5 col-sm-6 col-xs-12 column">
 										<div class="footer-widget links">
 											<h2>Useful Links</h2>
+
+											<?php
+                           wp_nav_menu( array(
+                               'menu'              => 'footer2',
+                               'theme_location'    => 'footer2',
+                               'depth'             => 2,
+                               'container'         => 'div',
+                               'container_class'   => 'footer-widget links',
+                           'container_id'      => 'bs-example-navbar-collapse-1',
+                               'menu_class'        => 'footer-widget links',
+                               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                               'walker'            => new wp_bootstrap_navwalker())
+                           );
+                           ?>
+
 											<ul>
 												<li><a href="#">Privacy Policy</a></li>
 												<li><a href="#">Terms of Use</a></li>

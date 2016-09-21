@@ -103,7 +103,7 @@
 								<div class="content">
 									<h3><?php the_title(); ?></h3>
 									<div class="text">
-										<p><?php the_excerpt(); ?></p>
+										<p><?php the_excerpt('short_excerpt'); ?></p>
 									</div>
 									<div class="link"><a href="<?php the_permalink() ?>" class="read-more normal-btn theme-btn" style="background:#770a12;"><span class="fa fa-caret-right"></span> MORE INFO</a></div>
 								</div>
@@ -195,7 +195,7 @@
 										<div class="round-style"></div>
 										<i class="icon icon-hospital35"></i>
 										<h4 class="title"><?php the_title(); ?></h4>
-										<p class="details pt-5"><?php the_excerpt(); ?></p>
+										<p class="details pt-5"><?php the_excerpt('short_excerpt'); ?></p>
 										<a href="<?php the_permalink() ?>" class="thm-btn btn-xs mr-5"><i class="fa fa-angle-double-right"></i> Read More</a>
 										<a class="thm-btn inverse btn-xs" href="contact-us"><i class="fa fa-comment-o"></i> Contact</a>
 									</div>
