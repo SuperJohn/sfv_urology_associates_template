@@ -93,9 +93,9 @@
 
 						<div class="contact-info">
 							<ul>
-								<li><div class="info-title"><span class="fa fa-phone"></span> Tarzana: </div><p class="info"><?php the_field('tarzana_phone');?></p></li>
-								<li><div class="info-title"><span class="fa fa-phone"></span> West Hills: </div><p class="info"><?php the_field('west_hills_phone');?></p></li>
-								<li><div class="info-title"><span class="fa fa-clock-o"></span> Our Hours</div><p class="info"><?php the_field('office_hours');?></p></li>
+								<li><div class="info-title"><span class="fa fa-phone"></span> Tarzana: </div><p class="info"> 818.996.4242</p></li>
+								<li><div class="info-title"><span class="fa fa-phone"></span> West Hills: </div><p class="info"> 818.346.8736</p></li>
+								<li><div class="info-title"><span class="fa fa-clock-o"></span> Our Hours</div><p class="info"> 9am - 6pm</p></li>
 							</ul>
 						</div>
 

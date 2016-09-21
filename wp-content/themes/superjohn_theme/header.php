@@ -26,9 +26,18 @@
                <!-- Top Right -->
                <div class="top-right">
                   <ul class="clearfix">
-                     <li><a href="tel:<?php the_field('tarzana_phone');?>"><span class="fa fa-phone"></span> Tarzana: <?php the_field('tarzana_phone');?></a></li>
-                     <li><a href="tel:<?php the_field('west_hills_phone');?>"><span class="fa fa-phone"></span> West Hills: <?php the_field('west_hills_phone');?></a></li>
-                     <li><a href="#"><span class="fa fa-clock-o"></span> <?php the_field('office_hours');?></a></li>
+
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+                                $tarzana_phone = get_post_meta(121, 'tarzana_phone', true);
+                                $tarzana_phone = get_post_meta(14, 'west_hills_phone', true);
+                                $tarzana_phone = get_post_meta(14, 'office_hours_phone', true);
+                                endwhile; else: ?>
+                                <p>Sorry, no posts matched your criteria.</p>
+                                <?php endif; ?>
+
+                     <li><a href="tel:818.996.4242"><span class="fa fa-phone"></span> Tarzana: 818.996.4242 </a></li>
+                     <li><a href="tel:818.346.8736"><span class="fa fa-phone"></span> West Hills: 818.346.8736</a></li>
+                     <li><a href="#"><span class="fa fa-clock-o"></span> 9am - 6pm</a></li>
                   </ul>
                </div>
             </div>
