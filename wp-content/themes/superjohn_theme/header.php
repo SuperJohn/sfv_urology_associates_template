@@ -6,7 +6,6 @@
       <meta name="description" content="Prostate Cancer Treatment Tarzana - Prostate Cancer Treatment, Enlarged Prostate Treatment and Overactive Bladder Treatment are performed by Dr. Eugene Dula M.D., serving Tarzana, West Hills and the surrounding area.">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-      <?php include_once('includes/head.php'); ?>
       <?php wp_head(); ?>
    </head>
    <body <?php body_class(); ?> >
@@ -27,8 +26,8 @@
                <!-- Top Right -->
                <div class="top-right">
                   <ul class="clearfix">
-                     <li><a href="tel:818-996-4242"><span class="fa fa-phone"></span> Tarzana: <?php the_field('tarzana_phone');?></a></li>
-                     <li><a href="tel:818-346-8736 "><span class="fa fa-phone"></span> West Hills: <?php the_field('west_hills_phone');?></a></li>
+                     <li><a href="tel:<?php the_field('tarzana_phone');?>"><span class="fa fa-phone"></span> Tarzana: <?php the_field('tarzana_phone');?></a></li>
+                     <li><a href="tel:<?php the_field('west_hills_phone');?>"><span class="fa fa-phone"></span> West Hills: <?php the_field('west_hills_phone');?></a></li>
                      <li><a href="#"><span class="fa fa-clock-o"></span> <?php the_field('office_hours');?></a></li>
                   </ul>
                </div>
@@ -63,7 +62,7 @@
                                'container'         => 'div',
                                'container_class'   => 'collapse navbar-collapse',
                            'container_id'      => 'bs-example-navbar-collapse-1',
-                               'menu_class'        => 'nav navbar-nav',
+                               'menu_class'        => 'navigation',
                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                'walker'            => new wp_bootstrap_navwalker())
                            );

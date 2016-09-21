@@ -68,17 +68,28 @@
 							<!--Links Widget-->
 							<div class="widget links-widget">
 								<h3>PROCEDURES</h3>
-								<ul>
-									<li><a href="/procedures.php">All Services</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
-									<li><a href="#">Procedure Title</a></li>
 
-								</ul>
+                                <ul>
+									<li><a href="/procedures">All Services</a></li>
+
+								<?php $child_pages = new WP_Query( array(
+                                    'post_type'      => 'page', // set the post type to page
+                                    'posts_per_page' => 3, // number of posts (pages) to show
+                                    'post_parent'    => 38, // enter the post ID of the parent page
+                                    'no_found_rows'  => true, // no pagination necessary so improve efficiency of loop
+                                ) );
+                             ?>
+
+                              <?php if ( $child_pages->have_posts() ) : while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>
+
+									<li><a href="#"><?php the_title();?></a></li>
+
+							<?php endwhile; wp_reset_postdata(); else : ?>
+                                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                            <?php endif; ?>
+
+							</ul>
+
 							</div>
 							<!--Reviews Widget-->
 							<div class="widget review-widget" >
