@@ -72,6 +72,7 @@
 
     }
 
+
     add_action('wp_enqueue_style', 'my_scripts');
     add_action('wp_enqueue_scripts', 'my_scripts');
 
